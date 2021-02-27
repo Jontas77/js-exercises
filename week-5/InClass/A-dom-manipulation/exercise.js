@@ -4,7 +4,7 @@ Task 1
 Write JavaScript below that logs:
     1. all the "p" element nodes of the document,
     --> should log a list of nodes with a length of 6
-
+    
     2. the first div element node
     --> should log the ".site-header" node
 
@@ -15,7 +15,17 @@ Write JavaScript below that logs:
     --> should log a list of nodes with a length of 3
 
 */
+const parTags = document.querySelectorAll('p');
+console.log(parTags);
 
+const firstDiv = document.querySelector('.site-header');
+console.log(firstDiv);
+
+const jumboText = document.querySelector('#jumbotron-text');
+console.log(jumboText);
+
+const pTags = document.querySelectorAll('.primary-content p');
+console.log(pTags);
 
 /*
 Task 2
@@ -23,7 +33,11 @@ Task 2
 
 When a user clicks the 'ALERT' button, an alert box should pop up with the text "Thanks for visiting Bikes for Refugees!"
 */
+const alertBtn = document.querySelector('#alertBtn');
 
+alertBtn.addEventListener('click', () => {
+    alert("Thanks for visiting Bikes for Refugees!");
+});
 
 /*
 Task 3
